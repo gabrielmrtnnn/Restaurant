@@ -1,5 +1,7 @@
 package people;
 
+import main.Helper;
+
 public class Visitor {
     private String name;
     private int totalPrice = 0;
@@ -21,7 +23,7 @@ public class Visitor {
     }
 
     public void showTotalPrice() {
-        System.out.println(name + "'s total price: " + totalPrice);
+        System.out.println(name + "'s total price: " + Helper.formatIDR(totalPrice));
     }
 
 }

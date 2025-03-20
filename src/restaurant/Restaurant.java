@@ -1,9 +1,9 @@
 package restaurant;
 
 import java.util.ArrayList;
-
 import people.Chef;
 import people.Visitor;
+import main.Helper;
 
 public class Restaurant {
     private String name;
@@ -54,7 +54,7 @@ public class Restaurant {
         for(Menu menu : menus){
             System.out.println("Menu: " + menu.getName());
             for(Food food : menu.getFoods()){
-                System.out.println("	-" + food.getName() + ", Price: " + food.getPrice());
+                System.out.println("	-" + food.getName() + ", Price: " + Helper.formatIDR(food.getPrice()));
             }
         }
         System.out.println();
@@ -69,6 +69,6 @@ public class Restaurant {
     }
     
     public void showTotalIncome(){
-        System.out.println("\nTotal Income: " + totalIncome);
+        System.out.println("\nTotal Income: " + Helper.formatIDR(totalIncome));
     }
 }
