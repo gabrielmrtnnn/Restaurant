@@ -2,8 +2,6 @@ package restaurant;
 
 import java.util.ArrayList;
 
-import main.Food;
-
 public class Menu {
     private String name;
     private ArrayList<Food> foods = new ArrayList<>();

@@ -2,7 +2,6 @@ package restaurant;
 
 import java.util.ArrayList;
 
-import main.Food;
 import people.Chef;
 import people.Visitor;
 
